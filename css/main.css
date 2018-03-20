@@ -42,15 +42,44 @@ body {
   border: 1px solid rgba(0,0,0,.1);
 }
 
+.card-top-bar {
+  border-top-color: black;
+  border-top-width: 8px;
+}
+
+.card-top-bar2 {
+  border-top-color: #f43192;
+  border-top-width: 8px;
+}
+
+.linkheader {
+	font-family:'Alfa Slab One';
+}
+
+.linktext {
+  color: #333;
+}
+
+
+a.nolink:hover   {
+  color: #e32;
+  text-decoration:  none;
+} 
+
+a.nolink-post:link, a.nolink-post:visited, a.nolink-post:active {
+color: black;
+}
+ 
+a.nolink-post:hover   {
+  color: blue;
+  text-decoration:  none;
+} 
+
 @media (min-width: 992px) {
   body {
     padding-top: 56px;
   }
 }
-
-
-
-
 
 
 /* carousel css */
@@ -75,4 +104,53 @@ body {
 .carousel-inner .carousel-item-left{
   transform: translateX(0);
 
+
+.post-container{
+  width: 66.66667% !important;
+}
+
+
+/* sharing */
+
+.resp-sharing-button__link {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  margin: 0.5em
+}
+
+.resp-sharing-button {
+  border-radius: 5px;
+  padding: 0.5em 0.75em;
+}
+
+/* Solid icons get a fill */
+.resp-sharing-button__icon--solid {
+  fill: #fff;
+  stroke: none
+}
+
+.resp-sharing-button--facebook {
+  background-color: #3b5998
+}
+
+.resp-sharing-button--twitter {
+  background-color: #55acee
+}
+
+.resp-sharing-button--email {
+  background-color: #777
+}
+
+.resp-sharing-button--facebook:hover{
+  background-color: #2d4373;
+  text-decoration: none !important;
+}
+
+.resp-sharing-button--twitter:hover {
+  background-color: #2795e9;
+}
+
+.resp-sharing-button--email:hover {
+  background-color: #5e5e5e;
 }
