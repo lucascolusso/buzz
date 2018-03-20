@@ -53,3 +53,49 @@ body {
 .post-container{
   width: 66.66667% !important;
 }
+
+
+/* sharing */
+
+.resp-sharing-button__link {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  margin: 0.5em
+}
+
+.resp-sharing-button {
+  border-radius: 5px;
+  padding: 0.5em 0.75em;
+}
+
+/* Solid icons get a fill */
+.resp-sharing-button__icon--solid {
+  fill: #fff;
+  stroke: none
+}
+
+.resp-sharing-button--facebook {
+  background-color: #3b5998
+}
+
+.resp-sharing-button--twitter {
+  background-color: #55acee
+}
+
+.resp-sharing-button--email {
+  background-color: #777
+}
+
+.resp-sharing-button--facebook:hover{
+  background-color: #2d4373;
+  text-decoration: none !important;
+}
+
+.resp-sharing-button--twitter:hover {
+  background-color: #2795e9;
+}
+
+.resp-sharing-button--email:hover {
+  background-color: #5e5e5e;
+}
