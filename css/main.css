@@ -42,6 +42,39 @@ body {
   border: 1px solid rgba(0,0,0,.1);
 }
 
+.card-top-bar {
+  border-top-color: black;
+  border-top-width: 8px;
+}
+
+.card-top-bar2 {
+  border-top-color: #f43192;
+  border-top-width: 8px;
+}
+
+.linkheader {
+	font-family:'Alfa Slab One';
+}
+
+.linktext {
+  color: #333;
+}
+
+
+a.nolink:hover   {
+  color: #e32;
+  text-decoration:  none;
+} 
+
+a.nolink-post:link, a.nolink-post:visited, a.nolink-post:active {
+color: black;
+}
+ 
+a.nolink-post:hover   {
+  color: blue;
+  text-decoration:  none;
+} 
+
 @media (min-width: 992px) {
   body {
     padding-top: 56px;
