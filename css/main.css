@@ -84,12 +84,16 @@ a.nolink-post:hover   {
 
 /* stories */
 
-#stories {
+@media (max-width: 600px) {  /* hide it on small screens */
+  .stories {
+    display: none;
+    }
+}
+
+.stories {
     flex-direction: column;
-    height: 70px;
     width: 100%;
     display: table;
-    background: rgba(244,49,146,.8);
 }
 
 .content {
@@ -99,19 +103,42 @@ a.nolink-post:hover   {
 
 .story {
   flex: 1;
-}
-
-.storylink:hover{
-  opacity: 0.1;
-  transition: opacity .2s;
+  position: relative;
 }
 
 img{
   width: 100%;
-height: auto;
+  height: auto;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(244,49,146,.8);
+
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+height: 100%;
+width: 100%;
+
 
 }
 
+.story:hover .overlay {
+  opacity: 1;
+}
+
+.storytext{
+  font-size: 12px;
+  line-height: 1.3;
+  color: white;
+  margin:10px;
+  position: absolute;
+}
 
 /* ------leftovers */
 
