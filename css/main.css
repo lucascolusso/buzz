@@ -85,10 +85,11 @@ a.nolink-post:hover   {
 /* stories */
 
 #stories {
-  flex-direction: column;
-  height: 70px;
-  width: 100%;
-  display: table;
+    flex-direction: column;
+    height: 70px;
+    width: 100%;
+    display: table;
+    background: rgba(244,49,146,.8);
 }
 
 .content {
@@ -96,13 +97,19 @@ a.nolink-post:hover   {
   flex: 1;
 }
 
-#story {
+.story {
   flex: 1;
+}
+
+.storylink:hover{
+  opacity: 0.1;
+  transition: opacity .2s;
 }
 
 img{
   width: 100%;
 height: auto;
+
 }
 
 
