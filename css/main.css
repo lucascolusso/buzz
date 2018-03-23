@@ -23,10 +23,6 @@ body {
   letter-spacing: -1px;
 }
 
-.navbar-toggle, .icon-bar {
-border:1px solid orange;
-}
-
 .card-footer {
   border-top: 0px;
   background-color: white;
