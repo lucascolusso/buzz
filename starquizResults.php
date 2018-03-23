@@ -23,6 +23,11 @@ if ($conn->query($sql) === TRUE) {
 
 #$responses = array("Q1" => , "Q2" => $_POST["Q2"],"Q3" => $_POST["Q3"],"Q4" => $_POST["Q4"],"Q5" => $_POST["Q5"],"Q6" => $_POST["Q6"],"Q7" => $_POST["Q7"],"Q8" => $_POST["Q8"],"Q9" => $_POST["Q9"],"Q10" => $_POST["Q10"]);
 
+
+
+$conn->close();
+
+
 $array = array(
     0 => array(
         'url' => 'C3P0',
@@ -84,20 +89,20 @@ function shuffle_assoc($array)
 }
 
 
-
 $value = max(array_column($array, 'rating'));
 
 $array = shuffle_assoc($array);
 
 foreach ($array as $item) {
     if ($item['rating'] == $value) {
-        echo $item[url];
+        $redirect_url = $item[url];
         break;
     }
 }
 
+header('Location: http://buzz.hcde.uw.edu/starquiz_'.$redirect_url.'.html');
+die();
 
-$conn->close();
 ?>
 
 
