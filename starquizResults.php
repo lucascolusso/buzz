@@ -14,11 +14,18 @@ if ($conn->connect_error) {
 $sql = "INSERT INTO responses (user_ip, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10) 
 VALUES ('$_SERVER[REMOTE_ADDR]','$_POST[Q1]','$_POST[Q2]','$_POST[Q3]','$_POST[Q4]','$_POST[Q5]','$_POST[Q6]','$_POST[Q7]','$_POST[Q8]','$_POST[Q9]','$_POST[Q10]');";
 
+
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
+$responses = array("Q1" => $_POST["Q1"], "Q2" => $_POST["Q2"],"Q3" => $_POST["Q3"],"Q4" => $_POST["Q4"],"Q5" => $_POST["Q5"],"Q6" => $_POST["Q6"],"Q7" => $_POST["Q7"],"Q8" => $_POST["Q8"],"Q9" => $_POST["Q9"],"Q10" => $_POST["Q10"]);
+
+echo $responses;
+
 $conn->close();
 ?>
+
+
