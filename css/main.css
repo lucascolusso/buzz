@@ -82,6 +82,11 @@ a.nolink-post:hover   {
 }
 
 
+label {
+  text-align: center
+}
+
+
 /* stories */
 
 @media (max-width: 600px) {  /* hide it on small screens */
