@@ -38,4 +38,5 @@ gulp.task('browserSync', function() {
 gulp.task('dev', ['browserSync'], function() {
   gulp.watch('./css/*.css', browserSync.reload);
   gulp.watch('./*.html', browserSync.reload);
+  gulp.watch('./posts/*.html', browserSync.reload);
 });
