@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116041896-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-116041896-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>HCDE Buzz</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Alfa+Slab+One" />
+    <!-- Custom styles for this template -->
+    <link href="../css/main.css" rel="stylesheet">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- social sharing -->
+    <script src="../css/likely.js"></script>
+    <link rel="stylesheet" href="../css/likely.css">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+      <div class="container">
+
+        <a class="navbar-brand" href="http://buzz.hcde.uw.edu"><big>H</big>CDE<big>B</big>UZZ</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../quiz.html">Quiz</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+      <!-- Blog Entries Column -->
+      <div class="col-md-8">
+        <br/>
+
+          <!-- Title -->
+          <h2 class="card-title linkheader">Speak or not to Speak: Chat and Voice Conversational Interaction for Workspace Reflection</h2>
+
+          <!-- Author -->
+          <p class="lead">
+            Posted on
+            April 1, 2018
+            by
+            <a href="http://www.rkocielnik.com/">Rafal Kocielnik</a>
+          </p>
+
+          <!-- social sharing -->
+
+          <div class="likely">
+            <div class="twitter">Tweet</div>
+            <div class="facebook">Share</div>
+          </div>
+
+
+          <br/><br/>
+
+          <!-- Preview Image -->
+          <!--<img class="img-fluid rounded" src="../img/6_things_ai_bots.svg" alt="">-->
+
+          <!-- Post Content -->
+          <p class="lead">Reporting activites at work is a common practice, either through stand-up meetings, emails, written reports or other means. Unfortunately, most employees consider it difficult, bordersome and borderline useless. Reporting progress is, however, very important for coordination and planning. </p>
+          <ul>
+            <li>Could a conversational agent  offer a more engaging way of reporting?</li> 
+            <li>Can the reporting be made more personally relevant through added personal reflection?</li> 
+            <li>What is the impact of conversational modality on user experience?</li>
+          </ul>
+
+          <p><strong>Existing tools support management centered reporting:</strong> Slack chatbots become increasingly popular for activity reporting at work, but mainly offer management-centered reporting that does support employees’ self-learning.</p>
+
+          <p><strong>Modalities of conversation important for behavior change:</strong> Text and voice-based conversational agents stand to play an important role in supporting behavior change, wellbeing and productivity in various domains.</p>
+
+          <h2>Robota Multimodal Conversational Agent</h2>
+          
+          <p>We designed and implemented a custom conversational agent called <strong>Robota (which stands for “work” in Polish)</strong> to support workplace journaling and reflection. Workers interact with Robota through chat and voice, and can explore past interactions through a web dashboard.</p>
+          
+          <img class="img-fluid rounded" src="../img/rk2_overview.png" alt="overview of the Robota multimodal conversational agent. Users interact with Robota on Slack and als using Amazon Dash Wand for voice. They can access their reports and reflections using a web dashboard.">
+
+          <p><strong>Chat module:</strong> We implemented Robota’s chat module as a “Slack bot” via the Slack API. The bot has the ability to send and respond to direct messages on Slack (a Slack bot appears just like a person on Slack, appearing in the user’s contact list).</p>
+
+
+          <p><strong>Voice module:</strong> We used the Alexa Dash Wand – a handheld cloud-connected device with a built-in speaker and microphone that allows the user to take it to a quiet room and speak to it discreetly. The Dash Wand supports the Alexa Voice Service (AVS) and custom-built apps (called “Skills”). We implemented a custom skill that asks the user a random reflection question and listens to the user’s response.</p>
+
+          <!--<img class="img-fluid rounded" src="../img/rk2_robota_system_diagram.jpg" alt="Robota system diagram." style="width: 40%; height:40%; align: center">-->
+
+          <h2>Robota in a Multinational Office</h2>
+
+          <p>To understand the potential role of modality (chat vs. voice) for journaling and reflection with a conversational agent in the context of the workplace, we conducted a three-week in-situ deployment of Robota with 10 participants in our lab, which is part of a larger multinational corporation (English, Japanese, Chinese and French accents). We collected user feedback through survey and interviews.</p>
+
+          <img class="img-fluid rounded" src="../img/rk2_study.png" alt="Study diagram, three 1 week stages, first just journaling, then two weeks with voice or hat in randmized order">
+
+          <h2>What did we learn?</h2>
+          <p>Robota sent a total of 174 reminders for journaling. Robota also sent 98 requests for reflection followed by 59 reminders (34 in the Chat-Reflection condition and 25 in the Voice-Reflection condition). The average length of a daily activity log was 292 characters (SD=239.62). The average length of a response to reflection questions using chat modality was 131 characters, compared to 98 using voice modality.</p>
+
+          <h4><img src="../img/rk2_reflection.png" style="width:35px; height:30px; display: inline; margin-right:5px;"/>Work Reflection with Robota</h4>
+          <p>
+            We found that reflection with Robota helps with <strong>management, organization and performance</strong>, it also encourages <strong>changing perspective and considering new aspects of work</strong>. Finally it promotes <strong>considering higher-level goals</strong> and the <strong>"bigger picture"</strong> related to ones activities and professional career.
+          </p>
+         
+          <h4><img src="../img/rk2_chat.png" style="width:35px; height:30px; display: inline; margin-right:5px;"/>Chat modality feedback</h4>
+          <ul>
+            <li><strong>Easier to read questions, think about response:</strong>
+              <blockquote>“It was easier to read the question and think about it”, “Reading is much faster than listening.”</blockquote>
+            </li>
+            <li><strong>Easier to reply in own time and describe details:</strong>
+              <blockquote>“It's easier to answer than explaining in a voice. Since my English is not so good, I couldn't answer to a question immediately if I have to speak.”</blockquote>
+            </li>
+            <li><strong>Typing is time consuming:</strong>
+              <blockquote>“Sometimes the answers to the questions are a bit complex, but I write something that is simpler and reductive because I don't want to spend time detailing it out on slack.”</blockquote>
+            </li>
+            <li><strong>Easier to review and change responses:</strong>
+              <blockquote>“I also could more easily change my response with the chatbot before submitting.”</blockquote>
+            </li>
+            <li><strong>Slack seen as less personal:</strong>
+              <blockquote>“Typing on slack is slightly more formal I guess, it is something that goes into the record”</blockquote>
+            </li>
+          </ul>
+
+          <h4><img src="../img/rk2_voice.png" style="width:35px; height:30px; display: inline; margin-right:5px;"/>Voice modality feedback</h4>
+          <ul>
+            <li><strong>Separate channel for reflection valuable:</strong>
+              <blockquote>“It's good to have another means to quickly capture some useful points or thoughts.”</blockquote>
+            </li>
+
+            <li><strong>Easier to answer questions with voice:</strong>
+              <blockquote>“It doesn't take much time to answer, is easier than writing report on Slack.”</blockquote>
+            </li>
+
+            <li><strong>Perceived pressure to respond immediately:</strong>
+              <blockquote>“While using voice, it seemed to encourage me to answer right away, which is a bit stressful”</blockquote>
+            </li>
+            <li><strong>Listening to own responses inconvenient and uncomfortable:</strong>
+              <blockquote>“It is not transcribed and listening to what I said many times is somehow troublesome.”</blockquote>
+            </li>
+            <li><strong>Interactive, fun and engaging:</strong>
+              <blockquote>“It was kind of neat to use the wand and have the voice reveal to me what the mystery reflection question was.”</blockquote>
+            </li>
+          </ul>
+
+          <!--<img class="img-fluid rounded" src="../img/rk1_blink_bot.gif" alt="">-->
+
+          <!--<p>Tracking ones activities does not always contribute to improvements in fitness. As it turns out, just tracking is not enought in many cases. To make use of it you need to <strong>reflect</strong> on your data and <strong>learn</strong> from what you track. Unfortunately your app gives you a graph and expects you to figure things out for yourself.</p>
+          <img src="../img/rk1_background.png"></img>-->
+
+      <br/>
+
+
+<div class="card">
+      <h5 class="past-work-title">
+        Original research
+      </h5>
+      <div class"row">
+          <div class="col-12">
+                  <a href="#" class="nolink-post">
+                    <h7>Designing for Workplace Reflection: A Chat and Voice-Based Conversational Agent</h7>
+                    <p class="authors">
+                    Rafal Kocielnik, Daniel Avrahami, Jennifer Marlow, Di Lu, Gary Hsieh <br/>
+                    Published at <a href="http://dis2018.org/">Design of Interactive Systems 2018</a>
+                  </p>
+                  </a>
+              </div>
+      </div>
+  </div>
+    </div>
+
+    <!-- end left Column  "the" main column -->
+
+    <!-- Sidebar Widgets Column -->
+    <div class="col-md-4">
+
+      <!-- Side Widget -->
+      <div class="card my-4 card-top-bar">
+        <a href="quiz.html" class="nolink-post">
+          <h5 class="card-header">
+            <big>T</big>RENDING <big>Q</big>uiz
+            <span style="color: red;"><strong>NEW</strong></span>
+          </h5>
+          <div class="card-body">
+            <img class="card-img-top" src="../img/starwars.jpg">
+            <br/>
+              Discover which Star Wars character share the same values with you!
+            </div>
+          </a>
+      </div>
+
+      <!-- Side Widget -->
+      <div class="card my-4 card-top-bar2">
+        <h5 class="card-header" style="color:#f43192;">
+          About HCDE Buzz
+        </h5>
+        <div class="card-body">
+          On this page, some of the studies conducted in the
+          <a href="https://www.hcde.washington.edu/" target="_blank">
+            Human Centered Design and Engineering
+          </a>
+          department at the University of Washington
+          received an April Fool's Day makeup for your amusement!
+          April Fools' Day is a cultural holiday celebrated by pulling pranks,
+          telling jokes, and other humorous things designed to trick and entertain people.
+        </div>
+      </div>
+    </div>
+    </div>
+
+      <!-- read more -->
+
+<br/>
+      <h3>
+        Read more buzz!
+      </h3>
+      <div class="row">
+        <div class="col-4">
+          <img class="img-fluid rounded" src="http://placehold.it/900x300" alt="">
+          <h5>Title Title</h5>
+        </div>
+        <div class="col-4">
+          <img class="img-fluid rounded" src="http://placehold.it/900x300" alt="">
+          <h5>Title Title</h5>
+        </div>
+        <div class="col-4">
+          <img class="img-fluid rounded" src="http://placehold.it/900x300" alt="">
+          <h5>Title Title</h5>
+        </div>
+      </div>
+
+    </div>
+    <!-- /.container -->
+
+  </body>
+
+</html>
