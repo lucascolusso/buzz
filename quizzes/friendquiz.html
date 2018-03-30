@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116041896-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-116041896-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>HCDE Buzz: Quiz</title>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="../css/main.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="http://buzz.hcde.uw.edu"><big>H</big>CDE<big>B</big>UZZ</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">News
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../quiz.html">Quizzes</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+
+        <!-- Quiz Questions -->
+        <div class="col-md-8">
+
+        <br/>
+
+          <!-- Question header -->
+          <div class="card mb-4">
+            <div class="card-body">
+              <h2 class="card-title"> Thinking of asking a friend for advice? Think again!</h2>
+                <b>Take this awesome quiz to learn who can help you reach your goals!</b>
+              </div>
+          </div>
+
+          <!-- Question 1 -->
+          <div class="card mb-4">
+            <div class="card-body">
+              <p class="card-text">
+                <h3>
+                  Whom should you ask for help to get you started with exercise?
+                </h3>
+              </p>
+              <img class="img-fluid rounded" src="../img/friendsource_exercise.jpg" alt="Person running. Image source https://flic.kr/p/rqnjT">
+              
+              </br>
+                
+              <div class="row">
+                <div class="col-md-6">
+                  <button type="button" id="friend_exercise" class="btn btn-success btn-lg btn-block">Ask a Friend</button>
+                </div>
+                
+                <div class="col-md-6">
+                  <button type="button" id="stranger_exercise" class="btn btn-success btn-lg btn-block">Ask a Stranger</button>
+                </div>
+              </div>  
+
+              <br>
+              <div id="explanation_exercise" class="card mb-4" style="display:none;">
+                <div class="card-body">
+                  <p id="correct_exercise" class="answer_exercise card-text font-weight-bold" style="display:none; color: green;">                    
+                    Correct!
+                  </p>
+                  <p id="wrong_exercise" class="answer_exercise card-text font-weight-bold" style="display:none; color: red;">
+                    Wrong!
+                  </p>
+                  <div  >
+                    <p class="font-weight-bold">
+                      Ask a friend! 
+                    </p>
+                    <p >
+                      We have found  that friends tend to make recommendations that are close to what you are already doing (Agapie 2016). This can give you a good start to slowly ease into exercising. If you ask someone who doesn’t know you well they might push you to do more than you are ready for.  
+                    </p>
+                  </div>
+
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Question 2 -->
+          <div class="card mb-4">
+            <div class="card-body">
+              <p class="card-text">
+                <h3>
+                  Whom should you ask for fashion advice?
+                </h3>
+              </p>
+              <img class="img-fluid rounded" src="../img/friendsource_fashion.jpg" alt="People in the early 1900 talking. Image source https://flic.kr/p/bsJ5wa ">
+              
+              </br>
+                
+              <div class="row">
+                <div class="col-md-6">
+                  <button type="button" id="friend_fashion" class="btn btn-success btn-lg btn-block">Ask a Friend</button>
+                </div>
+                
+                <div class="col-md-6">
+                  <button type="button" id="stranger_fashion" class="btn btn-success btn-lg btn-block">Ask a Stranger</button>
+                </div>
+              </div>  
+
+              <br>
+              <div id="explanation_fashion" class="card mb-4" style="display:none;">
+                <div class="card-body">
+                  <p id="correct_fashion" class="answer_fashion card-text font-weight-bold" style="display:none; color: green;">   
+                    Correct!
+                  </p>
+                  <p id="wrong_fashion" class="answer_fashion card-text font-weight-bold" style="display:none; color: red;">
+                    Wrong!
+                  </p>
+                  <div  >
+                    <p class="font-weight-bold">
+                      Ask a stranger! 
+                    </p>
+                    <p >
+                      Someone who doesn’t know you is more likely to give you honest advice about things they don’t like, e.g.,when you are making a fashion mistake. Studies show that when people ask for feedback on fashion choices online, strangers are more honest about what clothing they do not recommend for the person (Morris 2014).
+                    </p>
+                  </div>
+
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Question 3 -->
+          <div class="card mb-4">
+            <div class="card-body">
+              <p class="card-text">
+                <h3>
+                  Whom should you ask to help you reach your goals, if you worry about being judged?
+                </h3>
+              </p>
+              <img class="img-fluid rounded" src="../img/friendsource_judgement.jpg" alt="Man with hands over face. Source image https://flic.kr/p/dQG4qM">
+              
+              </br>
+                
+              <div class="row">
+                <div class="col-md-6">
+                  <button type="button" id="friend_judgement" class="btn btn-success btn-lg btn-block">Ask a Friend</button>
+                </div>
+                
+                <div class="col-md-6">
+                  <button type="button" id="stranger_judgement" class="btn btn-success btn-lg btn-block">Ask a Stranger</button>
+                </div>
+              </div>  
+
+              <br>
+              <div id="explanation_judgement" class="card mb-4" style="display:none;">
+                <div class="card-body">
+                  <p id="correct_judgement" class="answer_judgement card-text font-weight-bold" style="display:none; color: green;">           
+                    Correct!
+                  </p>
+                  <p id="wrong_judgement" class="answer_judgement card-text font-weight-bold" style="display:none; color: red;">
+                    Wrong!
+                  </p>
+                  <div  >
+                    <p class="font-weight-bold">
+                      Ask a stranger! 
+                    </p>
+                    <p >
+                      We found that people are concerned about being judged by their friends if they have to tell friends about their habits when trying to accomplish a personal goal like eating healthier, exercising, or saving money (Agapie 2016).
+                    </p>
+                  </div>
+
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Question 4 -->
+          <div class="card mb-4">
+            <div class="card-body">
+              <p class="card-text">
+                <h3>
+                  Whom should you ask for new ideas to help you reach your goals?
+                </h3>
+              </p>
+              <img class="img-fluid rounded" src="../img/friendsource_diversity.jpg" alt="Orange with navy colored peel. Image source https://flic.kr/p/aBZZuB">
+              
+              </br>
+                
+              <div class="row">
+                <div class="col-md-6">
+                  <button type="button" id="friend_diversity" class="btn btn-success btn-lg btn-block">Ask a Friend</button>
+                </div>
+                
+                <div class="col-md-6">
+                  <button type="button" id="stranger_diversity" class="btn btn-success btn-lg btn-block">Ask a Stranger</button>
+                </div>
+              </div>  
+
+              <br>
+              <div id="explanation_diversity" class="card mb-4" style="display:none;">
+                <div class="card-body">
+                  <p id="correct_diversity" class="answer_diversity card-text font-weight-bold" style="display:none; color: green;">           
+                    Correct!
+                  </p>
+                  <p id="wrong_diversity" class="answer_diversity card-text font-weight-bold" style="display:none; color: red;">
+                    Wrong!
+                  </p>
+                  <div  >
+                    <p class="font-weight-bold">
+                      Ask a stranger! 
+                    </p>
+                    <p>
+                      Research shows that people who are in the same social network have more similar ideas than those outside of their network (Miller 2001). When asking for advice on exercising, eating healthier, or saving money, strangers provide more novel ideas (Agapie 2016).
+                    </p>
+                  </div>
+
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Question 5 -->
+          <div class="card mb-4">
+            <div class="card-body">
+              <p class="card-text">
+                <h3>
+                  Whom should you ask for help if you want them to check up on you?
+                </h3>
+              </p>
+              <img class="img-fluid rounded" src="../img/friendsource_accountability.jpg" alt="Image source https://flic.kr/p/22PuVY5 ">
+              
+              </br>
+                
+              <div class="row">
+                <div class="col-md-6">
+                  <button type="button" id="friend_accountability" class="btn btn-success btn-lg btn-block">Ask a Friend</button>
+                </div>
+                
+                <div class="col-md-6">
+                  <button type="button" id="stranger_accountability" class="btn btn-success btn-lg btn-block">Ask a Stranger</button>
+                </div>
+              </div>  
+
+              <br>
+              <div id="explanation_accountability" class="card mb-4" style="display:none;">
+                <div class="card-body">
+                  <p id="correct_accountability" class="answer_accountability card-text font-weight-bold" style="display:none; color: green;">           
+                    Correct!
+                  </p>
+                  <p id="wrong_accountability" class="answer_accountability card-text font-weight-bold" style="display:none; color: red;">
+                    Wrong!
+                  </p>
+                  <div  >
+                    <p class="font-weight-bold">
+                      Ask a friend! 
+                    </p>
+                    <p>
+                      We found that friends are interested in providing people with support in helping them reach their goals. They look forward to cooking meals together or exercising together in the future (Agapie 2016).
+
+                    </p>
+                  </div>
+
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+      
+        <br/>
+        <br/>
+        </div>
+
+        </form>
+        <!-- End Quiz Questions -->
+
+        <!-- Sidebar Widgets Column -->
+        <div class="col-md-4">
+
+          <!-- Side Widget -->
+          <div class="card my-4 card-top-bar">
+            <a href="quiz.html" class="nolink-post">
+              <h5 class="card-header">
+                <big>Quiz Info</big></span>
+              </h5>
+              <div class="card-body">
+                This quiz is sponsored by Cambridge Analyitics. 
+              </div>
+              </a>
+          </div>
+
+          <!-- Side Widget -->
+          <div class="card my-4 card-top-bar2">
+            <h5 class="card-header" style="color:#f43192;">
+              About HCDE Buzz
+            </h5>
+            <div class="card-body">
+              On this page, some of the studies conducted in the
+              <a href="https://www.hcde.washington.edu/" target="_blank">
+                Human Centered Design and Engineering
+              </a>
+              department at the University of Washington
+              received an April Fool's Day makeup for your amusement!
+              April Fools' Day is a cultural holiday celebrated by pulling pranks,
+              telling jokes, and other humorous things designed to trick and entertain people.
+            </div>
+          </div>
+        </div>
+        </div>
+
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; HCDE Prosocial Lab 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <script>
+      function showAnswerFriend(item){
+        $( "#friend_" + item).click(function() {
+          $(".answer_" + item).hide();
+          $( "#correct_" + item).show();
+          $("#explanation_" + item).show();          
+        });
+        $( "#stranger_" + item).click(function() {
+          $(".answer_" + item).hide();
+          $( "#wrong_" + item).show();          
+          $("#explanation_" + item).show();
+        });  
+      }
+
+      function showAnswerStranger(item){
+        $( "#stranger_" + item).click(function() {
+          $(".answer_" + item).hide();
+          $( "#correct_" + item).show();
+          $("#explanation_" + item).show();          
+        });
+        $( "#friend_" + item).click(function() {
+          $(".answer_" + item).hide();
+          $( "#wrong_" + item).show();          
+          $("#explanation_" + item).show();
+        });  
+      }
+
+      $(document).ready(function(){
+        showAnswerFriend("exercise");
+        showAnswerStranger ("fashion");
+        showAnswerStranger("judgement");
+        showAnswerStranger("diversity");
+        showAnswerFriend("accountability");
+      });
+    </script>
+  </body>
+
+</html>
