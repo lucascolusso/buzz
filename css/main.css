@@ -56,10 +56,22 @@ body {
 	font-family:'Alfa Slab One';
 }
 
+.past-work-title{
+  padding-left:14px;
+  padding-top:10px;
+}
+
+.authors {
+  font-size: 10px;
+}
+
 .linktext {
   color: #333;
 }
 
+.col-6{
+      float: left;
+}
 
 a.nolink:hover   {
   color: #e32;
@@ -144,6 +156,10 @@ width: 100%;
   color: white;
   margin:8px;
   position: absolute;
+}
+
+.card-block{
+  padding-top:10px;
 }
 
 /* ------leftovers */
