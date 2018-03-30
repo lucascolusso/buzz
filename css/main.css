@@ -27,6 +27,7 @@ body {
   border-top: 0px;
   background-color: white;
   font-size: 12px;
+  padding-top: 0px;
 }
 
 .card-header {
@@ -54,6 +55,10 @@ body {
 
 .linkheader {
 	font-family:'Alfa Slab One';
+}
+
+.card-title{
+  margin-bottom:0px;
 }
 
 .past-work-title{
