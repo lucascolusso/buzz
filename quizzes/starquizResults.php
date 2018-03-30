@@ -100,7 +100,7 @@ foreach ($array as $item) {
     }
 }
 
-header('Location: http://buzz.hcde.uw.edu/starquiz_'.$redirect_url.'.html');
+header('Location: http://buzz.hcde.uw.edu/quizzes/starquiz_'.$redirect_url.'.html');
 die();
 
 ?>
